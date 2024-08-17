@@ -152,34 +152,40 @@ footer {
     width: 100%;
 }
 
+
 .login-container img {
     max-width: 100px;
     margin: 0 auto;
 }
 
+
 .login-container h1 {
     margin-bottom: 20px;
     text-align: center;
-    color: #4caf50;
+    color: #4CAF50;
 }
+
 
 .login-container input[type="submit"] {
     width: 100%;
 }
 
+
 .login-container a {
     display: block;
     margin-top: 8px;
     font-size: 0.9em;
-    color: #4caf50;
+    color: #4CAF50;
     text-decoration: none;
 }
+
 
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 16px
+    gap: 16px;
 }
+
 
 @media (max-width: 768px) {
     body {
