@@ -1,6 +1,6 @@
-const root = document.getElementById("root")
+const root = document.getElementById("root");
 
-/* componentes da aplicaçao */
+/* componentes da aplicacao */
 
 function Cabecalho() {
     const header = document.createElement("header");
@@ -13,42 +13,45 @@ function Principal() {
 }
 
 function Rodape() {
-    const footer = document.createElement("footer")
-    return
+    const footer = document.createElement("footer");
+    return footer;
 }
 
 function Botao(nome) {
-    const button = document.createElement("input")
-    button.setAttribute("type", "submit")
-    button.setAttribute("value", nome)
-    return button
+    const button = document.createElement("input");
+    button.setAttribute("type", "submit");
+    button.setAttribute("value", nome);
+    return button;
 }
 
 function FormLogin() {
-    const form = document.createElement("form")
-    form.setAttribute('action', "")
-    form.setAttribute('method', "post")
-    return form
+    const button = Botao("Entrar");
+
+    const form = document.createElement("form");
+    form.setAttribute("action", "");
+    form.setAttribute("method", "post");
+    form.append(button);
+    return form;
 }
 
-/*paginas da aplicaçao */
+/* paginas da aplicacao */
 
 function Perfil() {
-    root.append(Cabecalho())
-    root.append(Principal())
-
+    root.append(Cabecalho());
+    root.append(Principal());
 }
 
 function Home() {
-    root.append(Cabecalho())
-    root.append(Principal())
+    root.append(Cabecalho());
+    root.append(Principal());
 }
 
 function Login() {
-    const main = Principal()
-    main.append(FormLogin())
-    root.append(main)
-    root.append(Rodape())
+    const main = Principal();
+    main.append(FormLogin());
+
+    root.append(main);
+    root.append(Rodape());
 }
 
 Login();
