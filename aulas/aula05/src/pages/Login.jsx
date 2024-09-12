@@ -3,7 +3,7 @@ import FormLogin from "./FormLogin"
 function Login(props) {
     return (
         <>
-            <h1>Login</h1>
+            <h1>Pagina Login</h1>
             <FormLogin  navegaPara={props.navegaPara}/>
         </>
     )

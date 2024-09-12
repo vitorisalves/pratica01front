@@ -3,7 +3,7 @@ import Link from "../components/Link"
 function Menu(props) {
     const opcoes = [
         {texto: "Home", rota: "/home"},
-        {texto: "Perfil", rota: "/Perfil"},
+        {texto: "Perfil", rota: "/perfil"},
         {texto: "Sair", rota: "/login"}
     ]
     return (

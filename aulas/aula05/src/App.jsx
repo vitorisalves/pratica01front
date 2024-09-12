@@ -1,6 +1,6 @@
+import { useState } from "react"
 import Perfil from "./pages/Perfil"
 import Home from "./pages/Home"
-import { useState } from "react"
 import Login from "./pages/Login"
 
 function App() {

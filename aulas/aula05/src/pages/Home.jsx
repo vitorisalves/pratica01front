@@ -3,7 +3,7 @@ import Menu from "../components/Menu"
 function Home(props) {
     return (
         <>
-            <h1>Pagina Inicial</h1>
+            <h1>Pagina Home</h1>
             <Menu navegaPara={props.navegaPara}/>
         </>
     )
