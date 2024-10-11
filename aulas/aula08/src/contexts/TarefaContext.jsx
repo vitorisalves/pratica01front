@@ -1,25 +1,25 @@
 import { createContext, useState } from "react";
 
-const TarefaContext = createContext()
-
+const TarefaContext = createContext();
 
 function TarefaProvider(props) {
-    const [tarefas, setTarefas] = useState(["Estudar React"])
+  const [tarefas, setTarefas] = useState(["Estudar React", "Fazer a pratica"]);
 
-    const incluir = (tarefa) => {
-        setTarefas([...tarefas, tarefa])    
-    }
+  const incluir = (tarefa) => {
+    setTarefas([...tarefas, tarefa]);
+  };
 
-    const remover = (tarefa) => {
-        setTarefas(tarefas.filter((item) => item != tarefa))
-    }
+  const remover = (tarefa) => {
+    setTarefas(tarefas.filter((item) => item != tarefa));
+  }
 
-const contexto = {tarefas, incluir, remover}
+  const contexto = { tarefas, incluir, remover }
 
-    return (
-        <TarefaContext.Provider value={contexto}>{props.children}</TarefaContext.Provider>
-    )
-} 
+  return (
+    <TarefaContext.Provider value={contexto}>
+      {props.children}
+    </TarefaContext.Provider>
+  );
+}
 
-export { TarefaProvider, TarefaContext }
-
+export { TarefaContext, TarefaProvider };
