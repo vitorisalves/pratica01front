@@ -1,6 +1,6 @@
 import { TarefaProvider } from "./contexts/TarefaContext";
 import FormTarefa from "./pages/FormTarefa";
-import ListTarefa from "./pages/ListTarefa";
+import ListTarefa from "./pages/ListTarefas"
 
 function App() {
   return (

@@ -1,12 +1,11 @@
 {
   "tarefas": [
     {
-      "id_tarefa": 1,
-      "nome_tarefa": "Estudar react"
+      "id": "1a",
+      "tarefa": "Estudar react"
     },
     {
-      "id_tarefa": 2,
-      "nome_tarefa": "Fazer a pratica"
-    }
-  ]
+      "id": "2b",
+      "tarefa": "Fazer a pratica"
+    } ]
 }
