@@ -20,7 +20,7 @@ function TarefaProvider(props) {
       .then((response) => response.json())
       .then((data) => setTarefas([...tarefas, tarefa]))
       .catch((error) => console.log("deu ruim!", error.message));
-  };
+  }; 
 
   const remover = (tarefa) => {
     fetch(`http://localhost:3000/tarefas/${tarefa.id}`, {
